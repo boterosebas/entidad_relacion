@@ -1,0 +1,26 @@
+Table users {
+    id serial [pk] //llave primaria
+    username varchar [unique] //valor unico para que no se repita
+    email varchar [unique]
+
+}
+
+Table posts {
+    id serial [pk]
+    user_id int
+    title varchar
+    body text
+    created_at timestamp
+}
+
+Table profile {
+    username varchar
+    seguidores int
+    Npublicaciones int
+    reacciones int
+    Contactos int
+    biografia varchar
+    informacion varchar
+
+}
+
